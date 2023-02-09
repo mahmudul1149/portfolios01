@@ -236,9 +236,33 @@ a {
 }
 
 #skills .skills-section .skill {
-  display: grid;
+  /* display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 4rem;
+  grid-gap: 4rem; */
+  display: flex;
+  gap: 4rem;
+}
+.flex {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+.box {
+  display: flex;
+  gap: 4rem;
+}
+.box h3 {
+  margin-top: 2rem;
+  text-align: center;
+}
+.box2 {
+  display: flex;
+  gap: 4rem;
+}
+.box2 h3 {
+  margin-top: 2rem;
+  text-align: center;
 }
 
 #skills .skills-section .skill .skill-container img {
@@ -250,7 +274,18 @@ a {
   margin-top: 2rem;
   text-align: center;
 }
-
+@media (max-width: 750px) {
+  .box {
+    flex-direction: column-reverse !important;
+    margin-bottom: 2rem;
+  }
+  .flex {
+    flex-direction: column;
+  }
+  .box2 {
+    flex-direction: column-reverse;
+  }
+}
 /* Project section */
 
 .text-center {
@@ -471,10 +506,11 @@ h4 {
 
 #main-footer {
   background-color: #fff;
-  padding: 1.5rem;
   text-align: center;
 }
-
+#main-footer .social-link {
+  margin-top: 1.4rem;
+}
 #main-footer .social-link a {
   margin: 1.5rem;
   font-size: 1.3rem;
@@ -487,10 +523,44 @@ h4 {
 }
 
 #main-footer .copyright p {
-  color: var(--dark-color);
-  margin-top: 2.5rem;
-  margin-bottom: 1rem;
-  font-size: 0.8rem;
+  margin-top: 1.4rem;
+  padding: 0.5rem 0;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 28px;
+  border-top: 1px solid #ccc;
+}
+#main-footer .footer-text h2 {
+  margin-top: 2rem;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 36px;
+
+  color: #10723e;
+}
+#main-footer .footer-text p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 28px;
+  padding: 0.5rem 0;
+  /* identical to box height */
+
+  color: rgba(16, 114, 62, 0.62);
+}
+#main-footer .footer-text a {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 28px;
+  /* identical to box height */
+  color: #f91880;
 }
 
 @media (min-height: 1000px) {
