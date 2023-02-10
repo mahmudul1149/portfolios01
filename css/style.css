@@ -46,13 +46,7 @@ a {
   padding: 0 1rem;
 }
 .logo {
-  margin-top: 4px;
-}
-.logo span {
-  font-family: sans-serif;
-  color: #2a8255;
-  font-size: 1.4rem;
-  font-weight: 600;
+  margin-top: 12px;
 }
 
 .nav-container {
@@ -71,7 +65,7 @@ a {
 #landing .navbar {
   width: 100%;
   margin: auto;
-  padding: 1.75rem 0;
+  padding: 1rem 0;
 }
 
 #landing .navbar .div-row {
@@ -200,7 +194,7 @@ a {
 /******** SKILLS SECTION ********/
 
 #skills {
-  background: #d6d6d6;
+  background: #c3d987;
 }
 
 #skills img {
@@ -569,7 +563,7 @@ h4 {
   }
 }
 @media (max-width: 450px) {
-  .logo span {
+  .logo {
     display: none !important;
   }
 }
